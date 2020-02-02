@@ -1,3 +1,7 @@
+# DEMO VIDEO
+
+[![ ANGULAR MATERIAL EXAMPLE WITH TABLE ](https://img.youtube.com/vi/oPkmcRb19dk/0.jpg)](https://www.youtube.com/watch?v=oPkmcRb19dk)
+
 # GtechMaterial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
