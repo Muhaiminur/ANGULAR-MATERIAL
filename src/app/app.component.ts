@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gtech-material';
+  spinner_value=false;
+  side_nav_open=false;
+  fromnavigation='';
+  @ViewChild('sidenav', {static: false}) sidenav_on_off: MatSidenav;
+  spinner_onn(value){
+    console.log(value);
+    if(this.spinner_value === true){
+      this.spinner_value=false;
+    }else{
+      this.spinner_value=true;
+    }
+  }
+  clicknavigation(value){
+    this.fromnavigation=value;
+    this.sidenav_on_off.close();
+  }
+
 }
