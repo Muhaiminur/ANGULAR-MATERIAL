@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "gtech-material"
+  "defaultProject": "gtech-material",
+  "cli": {
+    "analytics": "b6e4baab-3473-47c8-b0ca-4a36f2dbd0c2"
+  }
 }
