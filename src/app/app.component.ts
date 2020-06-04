@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material';
+import { MatSidenav } from '@angular/material/sidenav';
 import { StarRatingComponent } from 'ng-starrating';
 
 @Component({
@@ -12,7 +12,7 @@ export class AppComponent {
   spinner_value=false;
   side_nav_open=false;
   fromnavigation='';
-  @ViewChild('sidenav', {static: false}) sidenav_on_off: MatSidenav;
+  @ViewChild('sidenav') sidenav_on_off: MatSidenav;
   spinner_onn(value){
     console.log(value);
     if(this.spinner_value === true){

@@ -10,7 +10,8 @@ import { JavaDetailsComponent } from './java-details/java-details.component';
 import { AndroidDetailsComponent } from './android-details/android-details.component';
 import { BusinessDetailsComponent } from './business-details/business-details.component';
 import { HttpClientModule }    from '@angular/common/http';
-import { MatSortModule, MatTableModule } from '@angular/material';
+import { MatSortModule } from '@angular/material/sort';
+import { MatTableModule } from '@angular/material/table';
 
 import { RatingModule } from 'ng-starrating';
 
