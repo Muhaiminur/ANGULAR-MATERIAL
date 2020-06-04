@@ -5,15 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialLibModule } from './material-lib/material-lib.module';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JavaDetailsComponent } from './java-details/java-details.component';
 import { AndroidDetailsComponent } from './android-details/android-details.component';
 import { BusinessDetailsComponent } from './business-details/business-details.component';
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
-
-import { RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
@@ -31,8 +29,7 @@ import { RatingModule } from 'ng-starrating';
     HttpClientModule,
     ReactiveFormsModule,
     MatSortModule,
-    MatTableModule,
-    RatingModule
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

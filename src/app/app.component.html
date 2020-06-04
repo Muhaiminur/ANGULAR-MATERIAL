@@ -1,4 +1,4 @@
-<!-- <mat-sidenav-container>
+<mat-sidenav-container>
     <mat-sidenav mode="over" [(opened)]="side_nav_open" #sidenav>
         <div class="navhead">
             <img src="http://www.gentertainmentbd.club/wp-content/uploads/2019/10/gtech.png" alt="G TECHNOLOGIES"
@@ -17,13 +17,13 @@
 
     </mat-sidenav>
     <mat-sidenav-content>
-        <button (click)="side_nav_open = !side_nav_open"> CHECK </button>
+        <!-- <button (click)="side_nav_open = !side_nav_open"> CHECK </button> -->
         <div style="text-align: center;">
 
             <div>
                 <mat-toolbar color="primary" class="navbar">
                     <mat-icon (click)="side_nav_open = !side_nav_open" matRipple= 'true'>reorder</mat-icon>
-                    <div (click)="side_nav_open = !side_nav_open">GTECH</div>
+                    <!-- <div (click)="side_nav_open = !side_nav_open">GTECH</div> -->
                     <div>
                         <span>ANDROID</span>
                         <span>JAVA</span>
@@ -72,14 +72,6 @@
             </div>
 
         </div>
-        
         <router-outlet></router-outlet>
     </mat-sidenav-content>
-</mat-sidenav-container> -->
-
-<div style="text-align:center">
-    <h1>
-      ng-starrating demo
-    </h1>
-    <star-rating value="5" totalstars="5" checkedcolor="red" uncheckedcolor="black" size="24px" readonly="false" (rate)="onRate($event)"></star-rating>
-  </div>
+</mat-sidenav-container>

@@ -1,5 +1,17 @@
 <div style="text-align: center;">
     <h1>java-details works!</h1>
+    <h2>jbcj</h2>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul class="list-inline rating-list" 
+                *ngFor="let star of stars" style="display: inline-block" >
+                  <li (click)="countStar(star)"
+                      [ngClass]="{'selected': (star <= selectedValue)}">
+                    <i class="fa fa-star"></i>
+                  </li> 
+            </ul>
+        </div>
+      </div>
     <div>
         <mat-table mat-table [dataSource]="dataSource">
             <!-- Position Column -->

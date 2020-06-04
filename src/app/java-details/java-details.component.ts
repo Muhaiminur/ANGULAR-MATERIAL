@@ -13,12 +13,20 @@ export class JavaDetailsComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
+  stars: number[] = [1, 2, 3, 4, 5];
+    selectedValue: number;
+
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
 
   constructor() { }
 
   ngOnInit() {
     this.dataSource.paginator = this.paginator;
+  }
+
+  countStar(star) {
+    this.selectedValue = star;
+    console.log('Value of star', star);
   }
 
 }
