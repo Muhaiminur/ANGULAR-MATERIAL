@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
+import { StarRatingComponent } from 'ng-starrating';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,13 @@ export class AppComponent {
   clicknavigation(value){
     this.fromnavigation=value;
     this.sidenav_on_off.close();
+  }
+
+  onRate($event:{oldValue:number, newValue:number, starRating:StarRatingComponent}) {
+    alert(`Old Value:${$event.oldValue}, 
+      New Value: ${$event.newValue}, 
+      Checked Color: ${$event.starRating.checkedcolor}, 
+      Unchecked Color: ${$event.starRating.uncheckedcolor}`);
   }
 
 }

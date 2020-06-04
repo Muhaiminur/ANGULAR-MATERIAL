@@ -12,6 +12,8 @@ import { BusinessDetailsComponent } from './business-details/business-details.co
 import { HttpClientModule }    from '@angular/common/http';
 import { MatSortModule, MatTableModule } from '@angular/material';
 
+import { RatingModule } from 'ng-starrating';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { MatSortModule, MatTableModule } from '@angular/material';
     HttpClientModule,
     ReactiveFormsModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
